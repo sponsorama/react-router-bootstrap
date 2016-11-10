@@ -56,7 +56,7 @@ const LinkContainer = React.createClass({ // eslint-disable-line react/prefer-es
   propTypes,
   contextTypes,
   mixins: [ContextSubscriber('router')], // eslint-disable-line new-cap
-  defaultProps,
+  getDefaultProps: () => defaultProps,
 
   onClick(event) {
     const {
